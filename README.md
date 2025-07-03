@@ -1,4 +1,4 @@
-# Global Raw Material Pricing Scraper - UiPath RPA
+# Scraping Global Pricing Raw Material - UiPath RPA
 
 This RPA project automates the process of extracting **global raw material prices** and related financial data from various sources (websites, APIs, etc.). It uses modular workflows to scrape, process, and notify stakeholders via email or WhatsApp, and optionally uploads results to SharePoint.
 
