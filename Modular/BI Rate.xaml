@@ -1,0 +1,431 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="BI_MIDDLE_RAT" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="754,4373" sap2010:WorkflowViewState.IdRef="BI_MIDDLE_RAT_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="74">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="104">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="BI_MIDDLE_RATE" sap:VirtualizedContainerService.HintSize="592,4308" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="Fltr_BI" />
+      <Variable x:TypeArguments="x:String" Name="Harga_Beli" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable_BI_MIDDLE_RATE" />
+      <Variable x:TypeArguments="x:String" Name="Harga_Jual" />
+      <Variable x:TypeArguments="x:Int32" Name="int_hargabeli" />
+      <Variable x:TypeArguments="x:Int32" Name="int_hargajual" />
+      <Variable x:TypeArguments="x:Int32" Name="int_jumlah" />
+      <Variable x:TypeArguments="x:Double" Name="int_bagi" />
+      <Variable x:TypeArguments="x:String" Name="Nilai_BI_MiddleRate" />
+      <Variable x:TypeArguments="x:String" Name="k" />
+      <Variable x:TypeArguments="x:String" Name="str_tanggal" />
+      <Variable x:TypeArguments="s:DateTime" Name="tanggal_hari_ini" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="530,61" sap2010:WorkflowViewState.IdRef="Assign_12">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:DateTime">[tanggal_hari_ini]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:DateTime">[DateTime.Now]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <If Condition="[tanggal_hari_ini.DayOfWeek = DayOfWeek.Monday]" sap:VirtualizedContainerService.HintSize="530,784" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence sap:VirtualizedContainerService.HintSize="400,304" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Hari_Senin&quot;]" />
+          <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_13">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[str_tanggal]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[(DateTime.Now.AddDays(-3).ToString("dd-MMM-yyyy")).Split(" "c)(0)]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence sap:VirtualizedContainerService.HintSize="400,304" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[&quot;Bukan_Hari_Senin&quot;]" />
+          <Assign sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Assign_14">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[str_tanggal]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[(DateTime.Now.AddDays(-1).ToString("dd-MMM-yyyy")).Split(" "c)(0)]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Else>
+    </If>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Kurs Transaksi BI" sap:VirtualizedContainerService.HintSize="530,3272" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5213e91b-a52d-416e-8377-ce9fc0a88c50" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,3055" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="BI_Rate_Txt" />
+              <Variable x:TypeArguments="x:String" Name="path_txt_BI" />
+              <Variable x:TypeArguments="x:String" Name="str_int_bagi" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'KURS TRANSAKSI'" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5213e91b-a52d-416e-8377-ce9fc0a88c50" Timeout="60" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="400,207" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;BI Website appear&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="400,207" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="338,92" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;BI Website does not appear&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bi.go.id/id/statistik/informasi-kurs/transaksi-bi/default.aspx" DesignTimeRectangle="138, 490, 1090, 42" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'KURS TRANSAKSI'" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname='KURS TRANSAKSI BANK INDONESIA' check:innerText='KURS TRANSAKSI BANK INDONESIA' /&gt;" Guid="87073cb3-7c29-4d51-8653-b66e92d11bf1" ImageBase64="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" InformativeScreenshot="dff0f7393b75e6782d0057aa80587db6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kurs Transaksi BI' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="159, 562, 81, 26" ElementType="Text" FriendlyName="'Akses Data'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='label-custom mb-1' aaname='                     Akses Data' check:innerText='Akses Data' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFUAAAAeCAYAAABdalL1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJSSURBVGhD7ZVNbgIxDIV7FRZdcJVKLDhIhcR9UMVNgKsM90jj2JmJfxKmFVap5CdFYiYZ5/mzE95S6OkKqA4KqA4KqA4KqA4KqA4KqA4KqA4KqA7qQ53O6WN3ThM9Ml2PafN+TBd6/Hvd0uf7NnsSo+ffWV2olwMY26eT5epFoX5e6bHonk67QQ5DWfHWqwMVgu5zp27Tx9ed3jX6F1BR2Bw/9eoBlaCdvva2IQUVTSzvapfUoWNMJfayRhZPzo8THECAa0zNVb9G/JIbn9scbjSpfVlXjAm1VBcCmYayBNSyvgmOGzcgIY4y1hxLuY/aF4qkC7No1Fk4txQNC96uVX578SBvBlHGRmmoLCHquAZIUQu1/Ob3VjHZ/ZOwjcyFBBUPP7kLR1A7ObRS+43icTHfJAVVVk1XMatCVR1FovfqO1DnG16I5fpYk9iLQzUMEATWWQUqJm2CI2FBxJoZuDFkdzdrxwmOIOAcPxn4ju+/DuqSUzOGUNcmPB9/KkL3qINEoWiPNV1QZZ4WpgFUuV/NUTXOY6ilK8W19LBTywILkLw3Z6hZlkkh62jLO3UolbRUH6rKSeYCWgXVvkYeQMVAdrJiroWaVY9ENXE5tAa1GVzPE4N3cxI5fuvjd51K+8rvqAmW+HWd9ixZYKc28QqHAdRHxhkIARWEG0Ji9zRdqXvrMLof4/E1lwmTmKYbJVoHL4AWQmXx8rAbJKvCKANiI8S2KNxfzbUWgAbAhFgiP/FHFXqGAqqDAqqDAqqDAqqDAqqDAqqDAqqDAurTldI3tHctRPnddDwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Harian'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="5213e91b-a52d-416e-8377-ce9fc0a88c50" Text="[str_tanggal]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bi.go.id/id/statistik/informasi-kurs/transaksi-bi/default.aspx" DesignTimeRectangle="174, 712, 493, 60" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='form-control mr-sm-2 text-left' aaname='' /&gt;" Guid="49460a68-8f3b-462d-b669-a51e50e19815" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAfEAAABACAYAAAAK004ZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUXSURBVHhe7d2xaltXHMDhvlOGTHmBZMgL+BE6ZGjxkCZTQoYaDQ5NaA2dSkKXJlAoBQ99gBiMC4VMaUqHugLjdrLBkFP/hY58dHQlC/s21jHfBwdLx+eea2noL1dS7U8SANAkEQeARok4ADRqJuL7+/tpb28v7ezspO3tbcMwDMMwrnBEj6PL0efaVMQXLQQArkZ5gV2aRDwvAABWU32hPYm4K3AAWG31Bfck4vUlOgCwespeTyIeb54DAKut7LWIA0BDRBwAGiXiANAoEQeARok4ADRKxAGgUSIOAI0ScQBolIgDQKNEHAAaJeIA0CgRB4BGiTgALOHZs2fpxo0b6ebNm2l3d3c8O22ZNX0ScQBYwubm5ijQMeb9ye5l1vRJxAFgCSIOAI2Il8Pv3r07ifJlxvr6ejo4OBjv3B8RB4DKcDhMa2trnUG+6BgMBunk5GR8hn6sbMS//e77NPhqKx0dHY9nZsX3Yk2sBYC+vHv3Lt25c6czxhcd9+/fP+3W0fgM/RBxAKiI+CWJOABXJUf81q1b6cmTJ+n58+cXHvfu3RPxLiIOwP8hRzxG3L6M169fX/+IR4g//fzB1KgjnqNdr1sm4ru//jY69q+/h+nB443JsT9t/zKzb33e2D/WxR55zWcPHqXf//hzNOJ2no91i+Rz5eNLef8ffvx59LV+XPnYjc2v08bTby61R/0YATgj4kvKUYmwHv7z73h29ko8vhdryrl87LIRj6iV54ngxlwZw3yeMsaxfxnEfN6YK3+eOEdXWGs5/HXwy8cct+vnJB8X5+ljDwC6dUX87du3aWtrK7148SIdHh6e/nf2KL169Wr0kvmbN2/Shw8fZtaEax3xeeErYxQiVnWQckxj7Xm6zpODXR8f98u5+mcJsV9EvIxh3u+8QOafu9wzz+Uod+0ft/Nz0MceAHTrinj9i1zymjLQXb/s5VpHvCvOoQ5nV0hztHJw81VmhCuPHLD4Oi/ii65mu+6HZfaLr+XPUj7O+vj4+sWjLyf368cW4nZ5v489AJgl4kuKoNSBDOV8V4zCvPkuVxHxRbqCX58j5nL48/o4b9bHHgDM6oq4l9M7lJEpLRPSuB1zLUY8xL6xPj5sF/vXx8XecY6Yj/PNe54uuwcA07oiflHeEz8VEaoD1HrE49h4+Tv2erzxdOY5CHHuGLFn1+PsYw8ApnVFvP4zo+/fv5/8bvWHDx+m4+Pjzj9Feq0jnsNXRjKCFO8hl3MRp4hmGaGIUqxbJkyrGPHYL/Z9dBrfev8snyeHutbHHgBM64q498TnyIHOHwCLaMZcXFlGGLMIUF4TI2IZc/PiVcohW6WIh1ibH0uXvGeM8rko9bEHAGdcibOU+EdA+YnyLvGPiBjz9LEHAGe6In5RIn6NxdXzolcS8lX0opfB+9gDgDMizrk+VqDP2wOAaSLOQhHWeB973kvcOc71++6lPvYAYFaO+O3bt9Pe3t7o//m+6Hj58qWIA8DHMhwO09ra2ii+fY3BYJBOTk7GZ+iHiANAh/h0ef70+WXH+vp6Ojg4GO/cHxEHgEaJOAA0SsQBoFEiDgCNEnEAaJSIA0CjRBwAGiXiANAoEQeARok4ADRKxAGgUSIOAI0ScQBoVGfEd3Z2xrcAgFVV9noS8fgD6Pv7++N7AMCqiU5Hr7NJxOtvAACrpb7gnkQ8xCW6K3IAWC35Qrt+63sq4qFcGG+eG4ZhGIZxdWPRBfZMxAGAFqT0H4Vkc3m9HbPyAAAAAElFTkSuQmCC" InformativeScreenshot="b5aa4d826054b545e5c02f21ca524443.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kurs Transaksi BI' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="174, 664, 51, 27" ElementType="Text" FriendlyName="'Harian'" FullSelectorArgument="&lt;webctrl parentid='harian' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='harian' tag='LABEL' type='' class='label-custom mb-1' aaname='                         Harian' check:innerText='Harian' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAfCAYAAABDJFUdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEwSURBVFhH7ZUxCsJAEEW9ioWFdxAsvICFYC0IliJ4CBEvInoQ9QqmNKUp0458ycg6bjTJDgkb90EgmSwz87KZpEMtJsj5SpDzlSDnK0HOV/5D7p4kNJ5MaX84ZpF3EMd9rNNgs93RYDiiaxRlEX0akUvTlJarNXV7fTqdL1lUn8Z2rg6CHLDJ4ZXCq8WHnCGcz+aL5zrcwxrO75LvFsev19q2jqksh0Zkc/hIoChmCqAgCpsxxiWfKcPza6vxIWc+OXnI4hLZIDeDuMS2c5K8fHID8nKpzlxdcjIfrs3dZJzkEPu2u2XlquZTl8O1TCjXlJFzyacqx0OMgTcp2gzQzKcqB9CIrXCRZoBmPnU5fto8GzjH/wf/IS5SRs4l30+5NhLkfCXI+UqQ85UWyxE9APoiESV5n1H9AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Cari'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5213e91b-a52d-416e-8377-ce9fc0a88c50" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bi.go.id/id/statistik/informasi-kurs/transaksi-bi/default.aspx" DesignTimeRectangle="712, 704, 197, 61" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Cari'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='btn btn-primary' aaname='Cari' check:text='Cari' /&gt;" Guid="4a8e99b0-64d0-4a79-8385-3f0b7ff9e0f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMkAAABBCAYAAAB7JYCwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUySURBVHhe7Z3vT1tVGMf9azR75TaiJsbtpYnJZkzUFybG+MLEt77QGM0UHcjicIlRVDbdspiZ6LJMNnBm/sgctIwGCvuh4Uf5tXZCGay0UCi0wON9Dve53Lbn0Om9A+n9fpNPIO05d0lzPjv3Oedy+hAhCLJpIAmCVAgkQZAKMUoyPrNAhy4M0YGmHtrXGKGH32sHoKp46mgXHWyKqnGeSOXskV8erSRNV27TnrqQ9sIAVCO7rfHefDVuG1CcMklqL8Zob11YeyEAqpnHGsL0YWvMNmEjRZLwDLIXMwgIMI83dNKJ9oRtxHocSbgGqanHDAJATX3IqlEWbTNckvA0s6tW3wmAILGrtoPq2oZtM1ySPPtFVNsBgCDy3Je9thkuSfY1dmkbAxBEeHlY4kiiawhAkJFAEgAMSCAJAAYkkAQAAxJIAoABCSQBwIAEkgBgQAJJADAggSQAGJBAEgAMSCAJAAYkkAQAAxJIAoABCSQBwIAEkvjMoZYhit7O0PzSCq2trX+2K6tEqYUCXbo1TS8e79P284unP+2mvybmadX6t68OpbRtwP0hgSQ+8cxnPRQZSzti6MID90zX39r+fvHWuQHKWoJykplleuXUDW07UBkJJPEBFqR/MqsEYeKpHDW3x9Xr/P7zzb10KnyHBpML9Pb5wbL+fuKeSTpiKdqDk2/+MxJI4gMXrk+pQcm3VVcG72FgVgkSSOKR1769RdPzefUZDiSz6n9yXTuw85BAEo9wjcGzyFJhlY79MqZtY4KL/J7xjFXU56nAF7HD1+qLz9HLJ4vrCak3+DaKDxGcmltWt3c8g7XdvOu06xyZVdfhn+7+4N8hgSQekQHJA/bV0ze1bXTwjDMyvXG2ky5c50hdw4gkXJDPLhbsVqQEOxlKOO0giT9IIIlHYlML6vPjn7r3N6PFqmW434mOhLMKxVL80DNJ+ZU1yuVX6ejlUae9e+WKpfygNaZef+mb60UyQRJ/kEASj3iRxASvhiVml8qWjEUSFuh4e7yojxtI4g8SSOKRBykJ56w1q8jrIgnDv7v7uIEk/iCBJB7xIgkfCPi1davFtcmidWtVuhFZWmtAkq1FAkk8cm00rT6/mWyeXj/zp7aNDvcGpCl8W8Un/UsfSLK1SCCJR2QJuFKdUErrjbvODj3Lcrht2Dlqlot4XsGCJNuLBJJ45I2z/c5yLH+l2P0+wMgbjxx+hKR0hx6S/D+QQBIf+H3gnjMrdI+ni5ZjTUgtw08Ml77HG4VzufVVLEiyfUggiQ9IfSHhHfRz0aSz98G3Ucd+HVMPOJ7uvKNe+61/RrXl3fXvuydVG77Od5EJJQgHkmwvEkjiE/wICd86bVaIc2TgvvPjIKVdu+buTGaWVDtIsr1IIImPcG3ReHlUzSq8pCvhZ6syuYK6tXIP7jet37k2kee2sssrFB6eVcKxHCzJ+d6k0x6SbC0SSAKAAQkkAcCABJIAYEACSQAwIIEkABiQQBIADEggCQAGJJAEAAMSSAKAAQkkAcCABJIAYEACSQAwIIEkABiQOJI8+fE1bUMAggj7IHEkOfB55b+mAyAoHGyK2ma4JHm35cF+JQAAO4n3L8ZsM1yS8CEGu+tC2g4ABIlHD4doIr1+OCDHkYTz1R9xfLcGCDQ1H4XVgYHuFEnC4a8DeETTGYBqh8d9/U/DtgkbKZOEw0drPnGkU1mluxgA1QSPc4ZPstFFKwknkVqkhksj9EJzH+3/JKK9OAA7mf2NETW+j/w8UlSDlMYoCYIgHKJ/ADGMgN7B6GBkAAAAAElFTkSuQmCC" InformativeScreenshot="9a1bf7207aab07c7fe2de4c81e8afc98.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kurs Transaksi BI' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="174, 664, 51, 27" ElementType="Text" FriendlyName="'Harian'" FullSelectorArgument="&lt;webctrl parentid='harian' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='harian' tag='LABEL' type='' class='label-custom mb-1' aaname='                         Harian' check:innerText='Harian' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAfCAYAAABDJFUdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAEwSURBVFhH7ZUxCsJAEEW9ioWFdxAsvICFYC0IliJ4CBEvInoQ9QqmNKUp0458ycg6bjTJDgkb90EgmSwz87KZpEMtJsj5SpDzlSDnK0HOV/5D7p4kNJ5MaX84ZpF3EMd9rNNgs93RYDiiaxRlEX0akUvTlJarNXV7fTqdL1lUn8Z2rg6CHLDJ4ZXCq8WHnCGcz+aL5zrcwxrO75LvFsev19q2jqksh0Zkc/hIoChmCqAgCpsxxiWfKcPza6vxIWc+OXnI4hLZIDeDuMS2c5K8fHID8nKpzlxdcjIfrs3dZJzkEPu2u2XlquZTl8O1TCjXlJFzyacqx0OMgTcp2gzQzKcqB9CIrXCRZoBmPnU5fto8GzjH/wf/IS5SRs4l30+5NhLkfCXI+UqQ85UWyxE9APoiESV5n1H9AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable_BI_MIDDLE_RATE]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Mata Uang' ReferenceIdx='0' Name='Mata Uang'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Nilai' ReferenceIdx='1' Name='Nilai'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Kurs Jual' ReferenceIdx='2' Name='Kurs Jual'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Kurs Beli' ReferenceIdx='3' Name='Kurs Beli'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Mata Uang' attr='text' /&gt;&lt;column name='Nilai' attr='text' /&gt;&lt;column name='Kurs Jual' attr='text' /&gt;&lt;column name='Kurs Beli' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="5213e91b-a52d-416e-8377-ce9fc0a88c50" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="165, 649, 1588, 2028" DesignTimeScaleFactor="1.5" FriendlyName="'Mata UangNilaiKurs'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="41df056d-77e0-4c41-80d0-d3c14ffd36d9" InformativeScreenshot="3049e409e58d4a5ce62d1d3264bf3067.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Kurs Transaksi BI' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:FilterDataTable DataTable="[ExtractDataTable_BI_MIDDLE_RATE]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[Fltr_BI]" SelectColumnsMode="Keep">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:String">["Mata Uang"]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">["USD"]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Fltr_BI]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,396" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow1" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,279" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Harga_Beli]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow1("Kurs Beli").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[Harga_Jual]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[CurrentRow1("Kurs Jual").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[Harga_Beli]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[Harga_Beli.Replace(".", "").Replace(",", "")]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[Harga_Jual]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[Harga_Jual.Replace(".", "").Replace(",", "")]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="434,132" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_hargabeli]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">[CInt(Harga_Beli)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Int32">[int_hargajual]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Int32">[CInt(Harga_Jual)]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[int_jumlah]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[int_hargabeli + int_hargajual]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Double">[int_bagi]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Double">[int_jumlah / 2]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_16">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_int_bagi]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[int_bagi.ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[str_int_bagi]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[str_int_bagi.Replace(".", "").Replace(",", "")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Nilai_BI_MiddleRate]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[str_int_bagi]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Nilai_BI_MiddleRate]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[Nilai_BI_MiddleRate.Substring(0, 5) &amp; "," &amp; Nilai_BI_MiddleRate.Substring(5)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[Nilai_BI_MiddleRate]" />
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[BI_Rate_Txt]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[" " + Nilai_BI_MiddleRate]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_10">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[path_txt_BI]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[path.Combine(Environment.CurrentDirectory,"Data\Output\BI.txt")]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[path_txt_BI]" sap:VirtualizedContainerService.HintSize="434,136.66666666666666" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[BI_Rate_Txt]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAADnklEQVQ4T32Ua2yTZRTHD4kxIl9I0ECIfsAPJtNggAUmMyBKHODqBmPvxkBilHBzxnkJBBMNo7s6WdeVtaVjMJaNjeziWDZgQRYCiBuxQ3fl4kBgGBlQUQioBPf3nPO25S00PMm/fZ7T9/ze85xLiQxPdKV5kynVXU4LHX5a4BgJyk82ZwWle1Oi+oiiGBNZPbRkG55c7sOc7H2YvKYK49+rQExWLV7e2ABavA2U6unn55IsfqYiDhm+IlpUAorPA03bDIrLxdK8Npz97Sb+uXcfDT8M4ZVVlaBZOaCUMnCkYL/iCIblUEQJxZj7VTMK951C5q7jWF3WgSznd7gSuA1Zbd0X8Tmfp362F/RaPshWClq2XaDOMCe4mceCRDdtbRXym7sVIMve1I1NO4/D1fozNuw4ihb/RbW723pAb22FpEZ9DU+CsvTD8AyrMcMHerMINGMLhn7/Ux0pPh8f7TiG23/fw4uZNaCxa1HPV5dllBwCvZobAl5VFn9IEUJGM+ELHOi7FFAnWupGQfMp3acWt4PGrUO645CeN9R26cst/ikCrLYYQMkM5KsPDv+hTrSkDPYGv+6nSITPZuHXkVt6fo4rr9d+4F8vwAGLISqwvOO07h0HelHbdR4/XbiOmNW7QXMKOE1alJBOC/AviyECeP+/Uax0HUZlex88B/tQf3hQwR29wxgrFZb8pbFPmraP6MZjgaOjwAsfVsPIaVXgM1y0CW8UIXDnXwUnbWkxoWY/igICHAzDHgLKokQnXO39uje4B2l8JiZ8sEvPsp5/f6c1j2cEuCcMiwbkKudxL8qyFew3p2imHc0nL6jt0+pOUKw95N8owMVhmEjaZqEDA5eDbZPsQsG3Ztu8U3gANJuv+NKXqDvxi9pWeo+Yo2j6pwtQJE35oLGnZ2NgOAic/w0yK47pPuaTOm7sNYj/oknPV27exVOJXBybU2ABZQWBMjZ8VQdi11cjt9HsO1mdQ9fQdfaq7mVCmoKVPsqVnrSiHDS3MDTPNitQ5JLkzs9uQSn328aaTnxc+T02V51ACc+th1vH3vAjcvhlCbmtIK42zfvavJXh8YU54Y1oua9MCkKzOfGxPFKsiRy5//w1jSqvyY8nXueIpFXkT8FsF28EI+JgymCdo6RSPM1X2VR3kqPr1yjd3IvGVp7nt/mlqe4hfm6Zxc/UI4aQ0r0Z/L2Hi9RDcTkjXMkRjryX81zLOXuXfxsT8bzKQ/8DwRNUCrnBdbwAAAAASUVORK5CYII=" InformativeScreenshot="ebb43efb1420a72e2da7f13ac93f879b.jpg" Selector="&lt;html app='chrome.exe' title='Kurs Transaksi BI' /&gt;" Url="https://www.bi.go.id/id/statistik/informasi-kurs/transaksi-bi/default.aspx" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
